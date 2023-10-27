@@ -5,5 +5,54 @@
 }
 
 :root {
-  font-size: 62.5%;
+  font-family: 'mulish', sans-serif;
+}
+
+body {
+  background-color: #121214;
+  padding: 72px 104px;
+  display: grid;
+  justify-content: center;
+}
+/*gap é a junção de row-gap com column-gap, primeiro e dada a linha depois a coluna*/
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 48px 60px;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 72px;
+  color: #027990;
+}
+
+header p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #e1e1e6;
+}
+/*over-flow hidden está adequando a imagem no card fazendo com que as bordas superiores se adéquem ao card
+fazendo o elemento nao exceder o tamanho pré-definido*/
+.card {
+  background-color: #202024;
+  border: 2px solid #323238;
+  overflow: hidden;
+  margin-top: 62px;
+}
+
+.card p {
+  color: #c4c4cc;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 32px 32px;
+}
+
+.card h2 {
+  color: #e1e1e6;
+  font-size: 36px;
+  font-weight: 900;
+  padding: 24px 32px 0;
 }
